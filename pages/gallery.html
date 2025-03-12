@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - My Portfolio</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Portfolio</div>
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">About Me</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a href="hobbies.html" class="nav-link">Hobbies</a>
+            <a href="goals.html" class="nav-link">Goals</a>
+            <a href="experience.html" class="nav-link">IT Experience</a>
+            <a href="gallery.html" class="nav-link active">Photo Gallery</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="gallery-section">
+            <h1>Photo Gallery</h1>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallerypicture/gallerypicture.jpg" alt="Gallery Image 1">
+                    <div class="overlay">
+                        <div class="caption">Project 1</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallerypicture/picture2.jpg" alt="Gallery Image 2">
+                    <div class="overlay">
+                        <div class="caption">Project 2</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallerypicture/picture3.jpg" alt="Gallery Image 3">
+                    <div class="overlay">
+                        <div class="caption">Project 3</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallerypicture/picture4.jpg" alt="Gallery Image 4">
+                    <div class="overlay">
+                        <div class="caption">Project 4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
